@@ -13,15 +13,36 @@ public class ileinterdite extends JFrame {
 
     public ileinterdite() {
         super("ile intedite");
+        JPanel contenaire = new JPanel();
+        JButton carte1 = new JButton("la porte d'argent");
+        JButton carte2 = new JButton("la porte d'or");
+        JButton carte3 = new JButton("l'heliport");
+        contenaire.setLayout(new BoxLayout(contenaire, BoxLayout.PAGE_AXIS));
+        contenaire.add(carte1);
+        contenaire.add(carte2);
+        contenaire.add(carte3);
+        this.add(contenaire);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(700,600);
-        this.setVisible(true);
+        this.setSize(700, 600);
         this.setLocationRelativeTo(null);
-        JPanel contener = new JPanel();
-        JButton carte1 = new JButton("carte1");
+        this.setVisible(true);
 
-        contener.setLayout(new BoxLayout(carte1 ,BoxLayout.Y_AXIS));
-        this.add(carte1);
+    /*class button extends Container {
+        public button(){
+            JButton carte1 = new JButton("carte1");
+            JButton carte2 = new JButton("carte2");
+            JButton carte3 = new JButton("carte3");
+
+
+            setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
+            add(carte1);
+            add(carte2);
+            add(carte3);
+
+        }
+        public void getButton(){
+
+        }*/
         //Jpanel listecarte = new JPanel()
         //JPanel conteneur = new JPanel();
         /*String url = "Capture.png";
