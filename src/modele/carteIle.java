@@ -27,8 +27,8 @@ public class carteIle extends JComponent {
         g.fillRect(x, y, 60, 60);
     }
 
-    public int getEtat(int c){
-        switch(c){
+    public void monEtat(int etat){
+        switch(etat){
             case 1 :
                 System.out.println("ile normale");
 
@@ -42,7 +42,9 @@ public class carteIle extends JComponent {
                 System.out.println("erreur");
 
         }
-        return c;
+    }
+    public int setEtat(){
+        return this.etat ;
     }
 
 }
