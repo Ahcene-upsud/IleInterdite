@@ -46,10 +46,7 @@ public class carteIle extends JComponent {
     public int setEtat(){
         return this.etat ;
     }
-    public void inondeAleatoire() {
-        if (this.setEtat() == 1) { //ile normale
-            this.setBackground(Color.CYAN);
-        }
+
     }
 
-}
+
