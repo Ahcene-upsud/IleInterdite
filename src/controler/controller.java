@@ -1,4 +1,7 @@
 package controler;
 
-public class controller {
+import java.awt.event.ActionListener;
+
+class controller implements ActionListener {
+
 }

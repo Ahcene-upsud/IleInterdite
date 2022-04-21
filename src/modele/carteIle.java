@@ -1,5 +1,4 @@
 package modele;
-import vue.color;
 
 import javax.swing.*;
 import java.awt.*;

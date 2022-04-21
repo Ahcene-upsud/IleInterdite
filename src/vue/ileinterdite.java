@@ -12,12 +12,7 @@ public class ileinterdite extends JFrame {
 
     public static void main(String[] args) {
 
-
-
         ileinterdite mafenetre = new ileinterdite();//ileinterdite.setSize(600, 600);
-
-
-
 
     }
 
