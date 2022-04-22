@@ -20,7 +20,7 @@ public jeu(plateauIle a , JButton carte1){
 
 
     @Override
-    public void actionPerformed(ActionEvent event ) {
+    public void actionPerformed(ActionEvent e ) {
             a.inondeAleatoire();
     }
 
