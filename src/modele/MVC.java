@@ -8,7 +8,7 @@ interface Observer{
     }
 
 abstract class Observable {
-    private ArrayList<Observer> observers ;
+    private ArrayList<Observer> observers;
 
     public Observable(){ this.observers = new ArrayList<Observer>(); }
 
