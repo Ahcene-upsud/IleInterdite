@@ -3,14 +3,14 @@ package modele;
 
 import java.util.ArrayList;
 
-enum role {normal , ingenieur , plongeur , messager};
+enum role {pilote, explorateur , navigateur , ingenieur , plongeur , messager};
 
 public class Joueur {
     private int x;
     private int y;
-    role r;
+     private role r;
 
-    public ArrayList<artefact> artefactList;
+    public ArrayList<cle> artefactList;
     public ArrayList<element> artfactElementList;
 
 
@@ -20,16 +20,16 @@ public class Joueur {
         this.r = r;
     }
 
-    public void addArtefact(artefact k) {
+    public void addArtefact(cle k) {
         artefactList.add(k);
         artfactElementList.add(k.getElement());
     }
-    public boolean getArtefact(artefact k){
+    public boolean getArtefact(cle k){
         return artefactList.contains(k);
     }
     public int nbOfArtefact(element e) {
         int res = 0;
-        for (artefact k : artefactList) {
+        for (cle k : artefactList) {
             if (k.getElement() == e) {
                 res += 1;
             }

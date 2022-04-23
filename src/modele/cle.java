@@ -1,12 +1,12 @@
 package modele;
 
 enum element{air,eau,feu,terre}
-public class artefact {
+public class cle {
     private element e;
-public artefact(element e){
+public cle(element e){
     this.e= e ;
 }
-public artefact(typeZone t){
+public cle(typeZone t){
     if(t == typeZone.air) this.e = element.air;
     if(t == typeZone.eau) this.e = element.eau;
     if(t == typeZone.terre) this.e = element.terre;
