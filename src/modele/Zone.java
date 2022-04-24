@@ -1,6 +1,6 @@
 package modele;
 
-enum typeZone{ joueur , heliport , air , eau , feu ,terre , normal, inonde ,submerge }
+enum typeZone{ joueur , heliport , air , eau , feu ,terre , normal, innonde ,submerge }
 public class Zone {
     private Modele modele;
      private boolean estJoueur ;
@@ -52,5 +52,5 @@ public class Zone {
 
     public boolean estNormale(){return zone == typeZone.normal;}
 
-    public boolean estInnonde(){return zone == typeZone.inonde;}
+    public boolean estInnonde(){return zone == typeZone.innonde;}
 }

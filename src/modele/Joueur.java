@@ -2,6 +2,7 @@ package modele;
 
 
 import java.util.ArrayList;
+import java.util.Random;
 
 enum role {pilote, explorateur , navigateur , ingenieur , plongeur , messager};
 
@@ -49,6 +50,8 @@ public class Joueur {
             }
 
     }
+
+
         public int getX() {
             return x;
         }
